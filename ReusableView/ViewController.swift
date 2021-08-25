@@ -9,10 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var firstCustomView: CustomView!
+    @IBOutlet weak var secondCustomView: CustomView!
+    @IBOutlet weak var thirdCustomView: CustomView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        self.firstCustomView.configureView(title: "XIB")
+        self.secondCustomView.configureView(title: "Is NOT")
+        self.thirdCustomView.configureView(title: "fun at ALL!")
     }
 
 
